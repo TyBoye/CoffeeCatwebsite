@@ -1,0 +1,53 @@
+main h1 {
+    padding-top: auto;
+    margin-top: 60px;
+    position: relative;
+    text-align: center;
+    font-family:  'Dosis', sans-serif;
+    z-index: -1;
+    text-decoration: underline tan;
+}
+
+section p {
+    margin-top: 75px;
+    padding: auto;
+    text-align: center;
+}
+
+.Title p {
+    text-decoration: underline tan;
+    font-weight: bold;
+    font-size: 36px;
+    font-family: 'Dosis', sans-serif;
+
+}
+
+.para {
+    text-align: center;
+    font-weight: none;
+    font-size: 15px;
+    font-family: 'Dosis', sans-serif;
+    padding: auto;
+    
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+
+}
+
+.footer-bottom {
+    bottom: 0;
+    position: absolute;
+    align-items: center;
+    right: 700px;
+}
+
+@media (max-width: 768px) {
+    .footer-bottom {
+        right: 300px;
+    }
+}

@@ -1,0 +1,275 @@
+body {
+    background-color: whitesmoke;
+    width: 100%;
+    margin: auto;
+    
+   
+}
+
+.container {
+    margin: 0;
+    padding: 0;
+    font-family: 'Dosis', sans-serif;
+}
+/** navigation */
+
+header {
+    display: fixed;
+    width: auto;
+    background-color: white;
+    text-transform: uppercase; 
+    z-index: 9;
+    opacity: 0.85;
+}
+
+.navigation {
+    justify-content: space-evenly;
+}
+
+nav {
+	position: fixed;
+	display: block;
+	width: 100%;
+	overflow: hidden;
+    text-align: right;
+    background-color: white;
+    top: 0;
+    line-height: 3;
+}
+
+
+ol {
+	display: flex;
+	margin: 0;
+	list-style: none;
+}
+
+ol a {
+	color: black;
+	padding: 8px 24px;
+	font-size: 16px;
+	display: block;
+	font-weight: bold;
+    font-family: 'Dosis', sans-serif;
+
+}
+
+@media (max-width: 768px) {
+    ol a {
+        font-size: 12px;
+    }
+}
+
+.logo {
+    position: fixed;
+    left: 26px;
+    top: 0;
+}
+
+.logostyle{
+    color: pink;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 3.5;
+    font-style: oblique;
+    font-family: 'Dosis', sans-serif;
+
+}
+
+@media (max-width: 768px) {
+    .logostyle {
+        font-size: 10px;
+        top: 0;
+        line-height: 3;
+    }
+}
+
+span {
+    color: #9C6615;
+    font-style: oblique;
+    font-weight: bold;
+}
+
+.textcolor {
+    color: pink;
+}
+
+a {
+    text-decoration: none;
+}
+
+ol li:hover {
+    /**text-decoration: underline;*/
+    background-color: tan;
+}
+
+/** hero image (coffee home page)*/
+main {
+    margin: 0;
+    padding: 0;
+}
+
+body main .img-hero {
+    background-image: url("https://images.unsplash.com/photo-1586512043403-4a460f56d7c2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1931&q=80");
+    height: 800px;
+    background-position: fill;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    margin: auto;
+    display: static;
+    padding: auto;
+    z-index: -1;
+}
+
+main .inner-hero {
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    color: white;
+    height: auto;
+    margin-top: 200px;
+
+}
+
+/* the coffee */
+
+main .catroom {
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    font-size: 31px;
+    font-weight: bold;
+    padding: 25px 15px;
+    line-height: 0.5px;
+    margin-top: 14px;
+    margin-bottom: 10px;
+    border-bottom: 5px solid transparent;
+    border-image: linear-gradient(to right, #413620 0%, #9c6615 60%, #9f7833 61%, #ffd791 100%);
+    border-image-slice: 1;
+    border-bottom-width: initial;
+    z-index: -1;
+}
+
+@media (max-width: 768px) {
+    main .catroom {
+        font-size: 13px;
+    }
+}
+
+/* button */
+
+.coffee .button {
+    align-items: center;
+    background-color: #fee6e3;
+    border: 2px solid #111;
+    border-radius: 8px;
+    box-sizing: border-box;
+    color: #111;
+    cursor: pointer;
+    font-family: Inter,sans-serif;
+    font-size: 16px;
+    height: 48px;
+    justify-content: center;
+    line-height: 24px;
+    max-width: 100%;
+    padding: 0 25px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    
+  }
+  
+  @media (min-width: 768px) {
+    .button {
+      padding: 0 40px;
+    }
+  }
+
+/* lobby area focus*/
+
+main .lobby {
+    width: 100%;
+    text-align: center;
+    font-size: 31px;
+    font-weight: bold;
+    padding: 25px 10px;
+    margin-top: 0;
+    line-height: 0.1;
+    /*border-bottom: 5px solid transparent;
+    border-image: linear-gradient(to right, #ffd791 0%, #9f7833 60%, #9c6615 61%, #413620 100%);
+    border-image-slice: 1;
+    border-bottom-width: initial;*/
+}
+
+.lobby .button {
+    align-items: center;
+    background-color: #fee6e3;
+    border: 2px solid #111;
+    border-radius: 8px;
+    box-sizing: border-box;
+    color: #111;
+    cursor: pointer;
+    font-family: Inter,sans-serif;
+    font-size: 16px;
+    height: 48px;
+    justify-content: center;
+    line-height: 22px;
+    max-width: 100%;
+    padding: 0 25px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    bottom: 0;
+    
+  }
+
+  @media (max-width: 768px) {
+    main .lobby {
+        font-size: 18px;
+    }
+}
+
+  @media (min-width: 768px) {
+    .lobby .button {
+      padding: 0 40px;
+    }
+  }
+
+footer {
+    width: 100%;
+    background-color: #cdd1de;
+    padding: 10px 15px;
+}
+
+.footer-content {
+    background-color: #cdd1de;
+    text-align: center;
+    color: black;
+    font-family:  'Dosis', sans-serif;
+    font-weight: bold;
+    font-size: 11px;
+    line-height: 1;
+}
+
+.footer-bottom {
+    font-family:  'Dosis', sans-serif;
+    text-align: center;
+    color: black;
+    font-weight: lighter; 
+    font-style: italic;
+    font-size: 10px;
+    background-color: #cdd1de;
+}
+
+
+
+
+
